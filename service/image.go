@@ -7,7 +7,7 @@ import (
 	"io/ioutil"
 )
 
-// GetThumbnail生成缩略图
+// GetThumbnail 生成缩略图
 func GetThumbnail(path string) {
 	imgData, err := ioutil.ReadFile(path)
 	if err != nil {
