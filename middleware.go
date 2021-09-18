@@ -34,7 +34,7 @@ func InitReq(c *gin.Context) {
 		RunTime:   fmt.Sprintf("%dms", time.Since(t).Milliseconds()),
 		Status:    c.Writer.Status(),
 	})
-	Info(c, string(loginfo))
+	logs.Info(c, string(loginfo))
 }
 
 func getLogid(t *time.Time) string {
